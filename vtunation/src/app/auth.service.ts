@@ -8,10 +8,10 @@ import { Router } from '@angular/router'
 export class AuthService {
 
 
-  private registerUrl = 'http://localhost:3000/api/register';
-  private loginUrl = 'http://localhost:3000/api/login';
-  private sendmail = 'http://localhost:3000/api/sendmail';
-  private sendmails = 'http://localhost:3000/api/sendmails';
+  private registerUrl = 'api/register';
+  private loginUrl = 'api/login';
+  private sendmail = 'api/sendmail';
+  private sendmails = 'api/sendmails';
 
   constructor(private http: HttpClient, private router: Router) { }
 
