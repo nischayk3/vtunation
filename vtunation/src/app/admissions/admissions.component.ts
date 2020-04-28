@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthService } from '../auth.service';
-import { ToastrService } from 'ngx-toastr';
+
 @Component({
   selector: 'app-admissions',
   templateUrl: './admissions.component.html',
@@ -9,7 +9,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class AdmissionsComponent implements OnInit {
 
-  constructor(private auth: AuthService, private toastr: ToastrService) { }
+  constructor(private auth: AuthService) { }
   model: any = {};
 
   ngOnInit() {
@@ -24,7 +24,7 @@ export class AdmissionsComponent implements OnInit {
     this.auth.sendEmail(this.model).subscribe(
       res => {
         console.log(res);
-        this.toastr.success('Message Sent');
+        
         console.log(
           `👏 > 👏 > 👏 > 👏 ${user.name} Thankyou for contacting`
         );
