@@ -1,0 +1,65 @@
+<app-header></app-header>
+  <div class="container my-4">
+  
+          <hr>
+  
+       <section id="register-form">
+  
+            <!--Title-->
+            <h2 class=" mb-4 ">
+              LOGIN
+            </h2>
+          
+            <!-- Description -->
+            <p>
+            </p>
+          
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-md-2 mb-4"></div>
+              <!--Grid column-->
+              <div class="col-md-8 mb-4">
+          
+                <!--Title-->
+                <h3 class="secondary-heading mb-3">
+                  
+                </h3>
+          
+                <!--Section: Live preview-->
+                <section>
+          
+                  <!-- Default form register -->
+                  <form class="text-center border border-light p-5" (ngSubmit)="onSubmit(f)" #f="ngForm" novalidate>
+          
+                    <h4 class="">LOGIN</h4>
+          
+                    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" ngModel required>
+        
+                    <!-- Password -->
+                    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" ngModel required>
+                    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                      At least 8 characters and 1 digit
+                    </small>
+                    <button class="btn btn-danger my-4 btn-block waves-effect waves-light" type="submit">LOGIN</button>
+          
+                    <hr>
+          
+                    <!-- Terms of service -->
+                    </form>
+                  <!-- Default form register -->
+          
+                </section>
+                <!--Section: Live preview-->
+          
+              </div>
+              <!--Grid column-->
+          
+              <!--Grid column-->
+              
+          
+            </div>
+            <!--Grid row-->
+          
+          </section>
+  
+    </div>
