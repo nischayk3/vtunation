@@ -70,7 +70,7 @@
     "@angular/platform-browser": "8.2.7",
     "@angular/platform-browser-dynamic": "8.2.7",
     "@angular/router": "8.2.7",
-    "@angular/cli": "7.3.9",
+    "@angular/cli@8.3.5",
     "chart.js": "2.8.0",
     "core-js": "3.2.1",
     "firebase": "^7.9.1",
