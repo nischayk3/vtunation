@@ -2,14 +2,6 @@
   "name": "blk-design-system-angular",
   "version": "1.0.0",
   "scripts": {
-    // "ng": "ng",
-    // "start": "ng serve",
-    // "build": "ng build",
-    // "description": "BLK Design System Angular: Free Angular Design System For Bootstrap 4 and Angular",
-    // "test": "ng test",
-    // "lint": "ng lint",
-    // "e2e": "ng e2e",
-    // "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
     "start": "http-server",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
