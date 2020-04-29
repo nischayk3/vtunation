@@ -2,14 +2,21 @@
   "name": "blk-design-system-angular",
   "version": "1.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "description": "BLK Design System Angular: Free Angular Design System For Bootstrap 4 and Angular",
+    // "ng": "ng",
+    // "start": "ng serve",
+    // "build": "ng build",
+    // "description": "BLK Design System Angular: Free Angular Design System For Bootstrap 4 and Angular",
+    // "test": "ng test",
+    // "lint": "ng lint",
+    // "e2e": "ng e2e",
+    // "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "start": "http-server",
+    "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor",
+    "preinstall": "npm install -g angular-cli",
+    "postinstall": "ng build && mv dist/* ."
   },
   "repository": {
     "type": "git",
@@ -71,6 +78,7 @@
     "@angular/platform-browser": "8.2.7",
     "@angular/platform-browser-dynamic": "8.2.7",
     "@angular/router": "8.2.7",
+    "@angular/cli": "7.3.9",
     "chart.js": "2.8.0",
     "core-js": "3.2.1",
     "firebase": "^7.9.1",
