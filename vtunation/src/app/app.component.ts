@@ -1,10 +1,4 @@
-import {
-  Component,
-  OnInit,
-  Renderer,
-  HostListener,
-  Inject
-} from '@angular/core';
+import { Component, OnInit, HostListener, Inject, Renderer2 } from '@angular/core';
 import { Location } from '@angular/common';
 import { DOCUMENT } from '@angular/common';
 import * as firebase from 'firebase';
@@ -16,7 +10,7 @@ import * as firebase from 'firebase';
 })
 export class AppComponent implements OnInit {
   constructor(
-    private renderer: Renderer,
+    private renderer: Renderer2,
     public location: Location,
     @Inject(DOCUMENT) document
   ) {}
