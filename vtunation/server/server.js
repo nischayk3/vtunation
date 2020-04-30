@@ -9,9 +9,9 @@ app.use(cors())
 app.use(bodyParser.json()); 
 app.use('/api', api);
 
-// app.get('/', function(req, res){
-//     res.send("hello server");
-// });
+app.get('/', function(req, res){
+    res.send("hello server");
+});
 
 app.listen(port, function(){
     console.log("Server running on localhost:" + port);
