@@ -15,7 +15,7 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "build:prod": "ng build --prod",
     "heroku-postbuild": "npm run build:prod",
-    "preinstall": "npm i -g http-server && npm i -g @angular/cli",
+    "preinstall": "npm i -g http-server && npm i -g @angular/cli"
   },
   "repository": {
     "type": "git",
