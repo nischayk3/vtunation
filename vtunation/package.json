@@ -6,13 +6,13 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "http-server",
-    "lint": "tslint \"src/**/*.ts\"",
+    "start": "ng serve",
+    "build": "ng build",
+    "description": "BLK Design System Angular: Free Angular Design System For Bootstrap 4 and Angular",
     "test": "ng test",
-    "pree2e": "webdriver-manager update",
-    "e2e": "protractor",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
     "preinstall": "npm install -g angular-cli"
-    
   },
   "repository": {
     "type": "git",
