@@ -6,7 +6,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "cross-env node dist",
+    "start": "node server.js",
     "description": "BLK Design System Angular: Free Angular Design System For Bootstrap 4 and Angular",
     "test": "ng test",
     "lint": "ng lint",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/blk-design-system-angular.git"
+    "url": "git+https://git.heroku.com/gentle-wildwood-79773.git"
   },
   "keywords": [
     "design system",
