@@ -5,13 +5,16 @@
     "node": "12.9.x"
   },
   "scripts": {
-    "start": "http-server",
-    "lint": "tslint \"src/**/*.ts\"",
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "description": "BLK Design System Angular: Free Angular Design System For Bootstrap 4 and Angular",
     "test": "ng test",
-    "pree2e": "webdriver-manager update",
-    "e2e": "protractor",
-    "preinstall": "npm install -g angular-cli",
-    "postinstall": "ng build && mv dist/* ."
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "postinstall": "ng build --aot -prod",
+    "heroku-postbuild": "cd ANGULAR_APP_FOLDER && npm install"
     
   },
   "repository": {
