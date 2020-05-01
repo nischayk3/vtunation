@@ -6,12 +6,12 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm start",
     "description": "BLK Design System Angular: Free Angular Design System For Bootstrap 4 and Angular",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "preinstall": "npm install -g angular-cli"
+    "preinstall": "npm install -g @angular/cli@latest"
   },
   "repository": {
     "type": "git",
